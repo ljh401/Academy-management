@@ -1,0 +1,529 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'LeferiPoint-BlackA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+.rSignupBox{
+    font-family: 'LINESeedKR-Bd';
+
+}
+.header{
+    padding:30px 0;
+    background-color: #30E3CA;
+    color:#FFF;
+    text-align: center;
+}
+.riderSignupUL {
+    max-width: 400px;
+}
+.rSUsH{
+	height:calc(100vh - 64px);
+
+}
+.riderSignupUL li:nth-child(odd) {
+    padding:20px 15px 5px;
+
+    font-size: 0.9rem;
+    color:#666;
+}
+.riderSignupUL li:nth-child(even) {
+    padding:0px 15px 10px;
+}
+input{
+    width:100%;
+    border: none;
+    box-shadow: 0 0 5px #30E3CA;
+    border-radius: 3px;
+    padding:10px;
+}
+.dflex{
+	display: flex;
+	justify-content: space-between;
+}
+.intext75{ width:75%;}
+.intext80{ width:80%;}
+.infile{}
+
+.inselect{
+	padding:5px;
+     box-shadow: 0 0 5px #30E3CA;
+    border-radius: 3px;
+    border:none;
+}
+BUTTON{
+    background-color: #30E3CA;
+    color:#fff;
+}
+.btn50{ width:49%;}
+.colorW{
+	background-color:#fff;
+	color:#30E3CA;
+	border:solid 1px #30E3CA;
+}
+.tSUbtnbox{
+	padding-top: 20px;
+}
+.tSUbtnbox button{ padding:15px 0; }
+
+/*---------------- (상단 버튼) ----------------*/
+.riderinformation .rbtn {
+  }
+
+/*---------------- (푸터 버튼) ----------------*/
+.fbtn{
+    display:flex;
+    height:100%;
+    font-family: 'LINESeedKR-Bd';
+    justify-content:center;
+    align-items:center;
+    font-size: 2rem;
+    margin: auto 0;
+    cursor: pointer;
+
+
+}
+.btn100{ width:100% }
+.btn50{width:50%}
+.bgm02{
+    background-color:var(--main02);
+    color:var(--white);
+
+}
+/*---------------- ( rindex ) ----------------*/
+.rcontBox{
+	display:flex;
+	justify-content:center;
+	padding:15px;
+    width:100%;
+    margin: 0 auto;
+    font-family: 'LINESeedKR-Bd';
+    height:70vh;
+    color:#fff;
+}
+.rcont{width: 80%;}
+.rtitle h2{
+    padding:10px 10px 8px;
+}
+.numbox{
+	font-family: 'LINESeedKR-Bd';
+	border:solid 1px var(--main02);
+	border-radius:10px;
+    padding:30px 0;
+    text-align: center;
+    letter-spacing : 0.3em;
+}
+.numbox2{padding-top:10px;}
+.numbox2 span{ display: inline-block; letter-spacing : 0.3em;}
+.numbox2 .col60{ text-align: left;}
+.fs18m02{font-size: 1.8rem; color:var(--main02);}
+.fs15m02{font-size: 1.5rem; color:var(--main02);}
+.fs22m02{font-size: 2.2rem; color:var(--main02);}
+
+/*---------------- ( rAfterWorking ) ----------------*/
+
+
+/*---------------- ( rWorking ) ----------------*/
+.bcp{cursor: pointer;}
+.hbutton{
+	padding-top:10px;
+
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+}
+.hbutton div{
+	border-radius: 10px;
+	color:var(--white);
+	padding:15px 10px;
+	font-size: 1.2rem;
+}
+.hbutton div:nth-of-type(1){ background-color: var(--dgray); margin: 0 10px;}
+.hbutton div:nth-of-type(2){
+	background-color: var(--main02);
+	margin: 0 10px;
+	color: var(--main04);
+}
+
+.hbutton i {
+	font-size: 1.2rem;
+	margin-right: 10px;
+	margin-bottom: 3px;
+}
+.rstate{
+	font-size:4rem;
+	color:#EBC12F
+}
+.dotBox i{
+	font-size: 0.8rem;
+	padding:5px;
+}
+
+.rstatebox{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	align-content: flex-start;
+	flex-wrap:wrap;
+	height:100%;
+	padding-top:100px;
+
+}
+.rstatebox div{
+	width:100%;
+	height:auto;
+	text-align: center;
+}
+.rstate {margin-bottom: 30px;}
+
+/*---------------- ( rRequestCall ) ----------------*/
+.rRequestbox{
+	width:100%;
+	height:100%;
+	background-color: var(--dgray);
+	border-radius: 10px;
+	padding:50px 15px;
+
+}
+.rRequestbox div{
+	text-align: center;
+}
+.rRequestbox i {
+	font-size:2rem;
+	color:var(--main02);
+}
+.rfrom{
+	font-size:2rem;
+	text-align: center;
+}
+.rto{
+	padding-top:30px;
+	font-size:2.2rem;
+	text-align: center;
+	color:#ffce1f;
+}
+.toname{
+	display: inline-block;
+width:100%;
+padding-top:20px ;
+}
+.cbtnBox{padding:0 15px ;}
+.cbtnBox div{border-radius: 10px;}
+ .cbtnBox .col40{
+ 	background-color: var(--dgray);
+ 	margin-right: 10px;
+ }
+  .cbtnBox .col60{
+ 	background-color:#ffce1f;
+ }
+/*---------------- ( rMyMenu ) ----------------*/
+.rheaderwrapA{
+	height:80px;
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	 font-size: 1.8rem;
+}
+.rheaderwrapA i{
+	vertical-align: middle;
+}
+.rmTitle{
+    margin-top:3px;
+	text-align: center;
+	width:100%;
+	color:var(--white);
+	font-size: 2rem;
+}
+.rtopbtn{width:10%;}
+.rsubTitle{
+    margin-left:50px;
+    margin-top:3px;
+    text-align: center;
+    color:var(--white);
+
+}
+.rsubTitle01{
+    margin-left:80px;
+    margin-top:3px;
+    text-align: center;
+    color:var(--white);
+
+}
+.rmyBtnBox{
+	width:100%;
+}
+.rmyBtn{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height: 70px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	border: solid 1px #EBC12F;
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+}
+.rmyBtn:hover{
+	color:#000;
+	background-color: #EBC12F;
+}
+
+
+
+/* 라이더 프로필 버튼사이즈 */
+
+.backimg img{
+	width: 60px;
+    padding: 6px 6px;
+    background-color: white;
+    margin: 10px 10px 5px;
+    border-radius: 15px;
+}
+.backimg{
+	border-bottom: solid 3px var(--main02);
+	color:var(--white);
+}
+.rphoto{
+	padding:30px 0;
+	width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.rphoto img{
+    width:200px;
+	object-fit:cover;
+    border-radius: 50%;
+
+}
+.photoinput{width:25%;}
+.rphotobtnBox button {
+	width:30%;
+	padding: 10px 0;
+	border-radius: 10px;
+	background-color: var(--dyellow);
+	margin-left: 10px;
+	font-family: 'NanumSquareNeo-Variable';
+	color:#000;
+}
+.rphotobtnBox{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.rpcontent{
+	padding:50px 50px ;
+	color:var(--white);
+	text-align: center;
+	}
+.rpcontent div{
+	padding-bottom: 10px;
+}
+.rpcontent input{width: 100px;}
+.rpname{
+	display:inline-block;
+	width:100px;
+	color: var(--white);
+    margin-top: 18px;
+}
+.rzone{
+	font-size: 16px;
+    color: #FBC22B;
+}
+
+/*---------------- ( rBikeNumChange ) ----------------*/
+.rChangeBox{
+    padding: 20px;
+
+}
+.rci_subtitle{
+
+	color:var(--dyellow);
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+.borderTop {
+	border-top: solid 1px var(--dgray);
+	padding-bottom: 20px;
+}
+.rci_subtitle span{
+	font-size: 0.8rem;
+	color:var(--white);
+}
+.inselect {
+	padding:10px;
+}
+.rChangeBox button {
+	width:100%;
+	padding: 15px 0;
+	background-color: var(--dyellow);
+    font-family: 'LINESeedKR-Bd';
+    font-size: 1.5rem;
+    color:#000;
+    border-radius: 5px;
+}
+.raccountinfo {width: 70%;}
+.rBankChange {
+	display: flex;
+justify-content: space-between;}
+/*---------------- ( rDriveRecord ) ----------------*/
+.hcontBox{
+
+}
+
+.pageInfo{
+
+    font-family: 'LINESeedKR-Bd';
+    font-size: 1.2rem;
+    letter-spacing:0.2rem;
+    padding:25px;
+    background-color: var(--main01);
+    color: var(--dgray);
+
+}
+.pageInfo i {
+font-size: 1.5rem;
+
+    margin-right: 20px;
+}
+
+.histroyBox{
+    background-color: #000;
+    padding:10px;
+    overflow-y: auto;
+    scrollwidth:1px;
+}
+.hContBox{
+    font-family: 'NanumSquareNeo-Variable';
+    background-color: var(--lgray);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding:20px;
+    font-size: 0.8rem;
+}
+.hContBox li:not(:last-child){
+    padding-bottom: 5px;
+
+}
+.hTitle{
+    letter-spacing: 0.67rem;
+    color: var(--dgray);
+}
+.hTitleA{
+    margin-right: 8px;
+    color: var(--dgray);
+}
+/*---------------- ( rBoardList ) ----------------*/
+.btypeBox{
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btypeBox div{
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.btypeBox .selected{
+    border-bottom: solid 3px var(--dgray);
+}
+
+.bContBox{
+    padding: 0px 10px;
+    color:var(--white);
+    }
+.btitle span{
+    font-size: 0.6rem;
+}
+.btitle {
+	font-weight:bold;
+    padding: 10px 0 ;
+    line-height: 1.5rem;
+}
+/*---------------- ( rBoardView ) ----------------*/
+.contBox{
+    padding-top:10px;
+}
+.vbtnBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rbvHeight{
+	height:calc(90vh -250px);
+}
+.vbtnBox button{
+    padding:10px 15px 5px;
+    font-family: 'LINESeedKR-Bd';
+    border-radius: 10px;
+    color:var(--dgray);
+}
+.vbtnBox button:hover{
+    background-color: var(--main01);
+    color: var(--main03);
+}
+.bviewBox{
+    padding: 20px 10px;
+    color:var(--white);
+
+}
+
+.bviewBox .bvTitle{
+    font-family: 'LINESeedKR-Bd';
+    font-size: 1.3rem;
+}
+.bviewBox .bvDate{font-size: 0.5rem;}
+.bviewBox .bvEventPeriod{
+    padding:10px 0;
+    font-family: 'LINESeedKR-Bd';
+    font-size: 0.9rem;
+    color:var(--main03);
+}
+.bviewBox .bvCont{
+    font-size: 0.8rem;
+}
+
+.bviewBox .bvImg img{
+    width: 100%;
+    object-fit:cover;
+}
+/*---------------- ( rIncomInfo ) ----------------*/
+
+.sheight{
+	height:calc(85vh - 15vh)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

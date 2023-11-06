@@ -1,0 +1,434 @@
+@charset "UTF-8";
+*{border:0px solid red;}
+/*------------------header------------------*/
+
+
+
+/*------------------footer------------------*/
+.fmenu{
+	width:100%;
+	height:100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: .9rem;
+	align-items: center;
+	text-align: center;
+	font-family: 'LINESeedKR-Bd';
+}
+.fmenu li {padding: 10px 0;}
+.fmenu a:hover {
+	color:#ff00cc;
+	text-shadow:  3px 3px 3px var(-main01);
+}
+
+.fmenu a{color:var(--white); }
+.fmenu li:nth-child(n+1):nth-child(-n+5){
+	border-right: solid 1px var(--main01);
+}
+
+/*------------------요청목록------------------*/
+.ptitle{
+	text-align: center;
+	padding-top: 20px;
+	color:var(--dgray);
+}
+.listbox{
+	padding:20px 10px;
+}
+.listTitle {
+	display:flex;
+	justify-content:space-around;
+	width:100%;
+	font-family: 'LINESeedKR-Bd';
+    font-size:0.8rem;
+    text-align: center;
+    background-color: var(--main04);
+    color:var(--white);
+    padding:7px 0;
+}
+.rlistH li:nth-child(n+1):nth-child(-n+3){
+	border-right: solid 1px var(--main01);
+}
+.listContent{
+	display:flex;
+    justify-content:space-around;
+    width:100%;
+    font-size:0.8rem;
+    text-align: center;
+    padding:7px 0;
+    align-items: center;
+ }
+ .rlistC:not(:last-child){
+    border-bottom:solid 1px var(--main03);
+ }
+.listContent:hover{
+	background-color: var(--main01);
+}
+
+/*------------------요청상세------------------*/
+.viewbox{
+	font-family: 'LINESeedKR-Bd';
+	color: #666;
+	height:calc(100vh - 227px) ;
+}
+
+.viewbox span{
+	color:#000;
+}
+.rPhotobox{
+	width:40%;
+	text-align: center
+}
+.rPhotobox img {
+	width:100%;
+	height: 150px;
+	object-fit:contain;}
+.rInfo{width:60%;}
+.rInfo div{
+	width:100%;
+	padding:5px 5px;
+}
+.sec1{
+	padding: 0px 10px;
+	border-bottom:solid 1px var(--main04);}
+.sec2 {
+
+	padding: 10px 10px;
+	border-bottom:solid 1px var(--main04);
+}
+.sec2 img{
+    width:-webkit-fill-available;
+    object-fit:cover;
+
+}
+.btnsec{
+	display:flex;
+	padding-top:30px;
+	font-size: 1.2rem;
+}
+
+/*------------------메인------------------*/
+.menuBox{
+	padding:15px 20px;
+
+	align-items: center;
+}
+.amenu{
+
+
+}
+.amenu li {
+	padding:20px;
+	margin-bottom : 20px;
+	background-color: var(--main01);
+	box-shadow:0 0  3px var(--main02);
+	border-radius: 10px;
+	font-family: 'LINESeedKR-Bd';
+	font-size:1.4rem;
+	text-align: center;
+}
+.amenu li:hover {
+
+	background-color: var(--main02);
+	color:var(--white) !important;
+
+}
+.amenu a{ color:var(--main02);}
+.amenu a:hover{ color:var(--white);}
+/*------------------서비스이용내역------------------*/
+
+/*------------------리뷰관리------------------*/
+.rlistR li:nth-child(n+1):nth-child(-n+4){
+	border-right: solid 1px var(--main01);
+}
+/*------------------입금관리------------------*/
+
+/*------------------결산관리------------------*/
+
+/*------------------공지쓰기------------------*/
+.apageinfo{
+	padding:20px;
+	font-family: 'LINESeedKR-Bd';
+	color: var(--dgray);
+	display: flex;
+}
+.apageinfo i{
+/* 	position: absolute; */
+    font-size: 1.5rem;
+
+	padding:3px;
+}
+.writeBox{
+	font-family: 'LINESeedKR-Bd';
+	padding:0 10px;
+	font-size: 0.8rem;
+	color: var(--dgray);
+	overflow-y: auto;
+	height:calc(100vh - 110px);
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+.writeBox::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.aptitle{
+    text-align: center;
+    padding-top: 20px;
+    color:var(--dgray);
+}
+.aptitle80{
+	width:90%;
+    text-align: center;
+    margin-right:30px;
+    color:var(--dgray);
+}
+
+.writeBox li{padding:10px 0 5px;;}
+.writeBox textarea, input[type="text"]{
+	border:solid 1px var(--lgray);
+	width:100%;
+	padding:10px;
+	border-radius: 5px;
+	font-family: 'NanumSquareNeo-Variable';
+
+}
+.writeBox textarea, input[type="text"]:focus{
+	outline: none;
+
+}
+.writeBox textarea{
+	height:35vh;
+	resize: none;
+
+}
+.writeBox input[type="radio"]{
+	margin:0px 5px 3px 0;
+}
+
+.writeBox .bfiles{
+	height:150px;
+	border:solid 1px var(--lgray);
+	padding:10px;
+	font-family: 'NanumSquareNeo-Variable';
+}
+.btypeBox span{
+	display: inline-block;
+	margin-right: 30px;
+}
+.btargetBox,.btypeBox, .bePeriodBox {border-bottom: solid 1px var(--lgray);}
+.btargetBox span{
+	display: inline-block;
+	margin-right: 37px;
+}
+
+.bePeriodBox i{
+	font-size: 1.2rem;
+	margin-left: 10px;
+}
+.gubun{margin: 0 10px;}
+.bbtnBox {
+		display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.bbtnBox button {
+	font-family: 'LINESeedKR-Bd';
+	color:solid 1px var(--dgray);
+	width:49%;
+	padding:15px;
+	border-radius: 10px;
+}
+
+/*모달 달력*/
+.modalBox{
+	padding:30px;
+	position:absolute;
+	display: none;
+	background-color: var(--main01);
+	top:20vh;
+	left:20%;
+	right:20%;
+	border-radius: 10px;
+}
+.modalcal{
+	width:200px;
+	margin: 0 auto;
+}
+
+/* 캘린더 상단 메뉴 */
+.caltop{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	height:30px;
+}
+
+/* 캘린더 상단 버튼 둘*/
+.caltop button{
+	background-color: white;
+	border:solid 1px #eee;
+	border-radius:50%;
+	padding:0 9px;
+	font-size: 0.7rem; color:var(--main03);
+	/*
+		커서 마우스 모양 설정
+		pointer: 손모양
+		move: 상하좌우방향의 화살표
+		help: 화살표에 ? 모양
+		zoom in / out
+	*/
+	cursor: pointer;
+}
+.caltop .caldate{margin:auto 15px;}
+/* 달력 구역 */
+.calendar{
+	display: flex;
+/* 	justify-content: space-between; */
+	flex-wrap: wrap;
+}
+.calendar div{
+	width:14%;
+/* 	text-align: center; */
+	border: solid 1px #eee;
+	height:26px;
+	font-size: 0.7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.week{
+	height:23px !important;
+	font-weight: bold;
+	font-size: 0.8rem;
+	text-align: center;
+	background-color: #e8e8e8;
+
+}
+.sunday{ background-color: red; color:#fff;}
+.today{background-color: var(--main02); font-weight: bold; color:#fff;}
+.days{background-color: var(--white);}
+.caltop{
+	display: flex;
+
+}
+
+/*------------------공지리스트------------------*/
+.listBox{
+
+	padding:0 10px;
+}
+.listhead,.listcont{
+	display: flex;
+	justify-content: space-between;
+
+}
+.listhead {
+	font-family: 'LINESeedKR-Bd';
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+.listhead li{
+	padding:8px 0;
+	background-color: var(--main04);
+	border-right: solid 1px var(--white);
+	color:var(--white);
+	letter-spacing: 0.1rem;
+}
+.listBox .btype{width:12%;}
+.listBox .btarget{width:8%;}
+.listBox .btitle{width:60%;}
+.listBox .bdate{width:20%; }
+
+.listbody{	overflow-y: auto;
+	height:calc(90vh - 190px);
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+.listbody::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+
+.listcont li{
+	border-bottom:solid 1px var(--main03);
+	padding:10px 0;
+	font-size: 0.6rem;
+	text-align: center;
+    overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+.listcont:hover{
+    background-color: var(--main01);
+}
+.listbtnBox{
+	display:flex;
+	justify-content:space-between;
+	   align-items: center;
+    vertical-align: middel;
+    padding-bottom: 5px;
+}
+.listbtnBox i{
+    margin-left:10px;
+    color:var(--dgray);
+}
+.listbtnBox button{
+	padding:10px 15px 5px;
+	background-color: var(--lgray);
+	color:var(--dgray);
+	font-family: 'LINESeedKR-Bd';
+	border-radius: 10px;
+	cursor: pointer;
+}
+.listbtnBox button:hover{
+    background-color: var(--main01);
+    color:var(--main03);
+}
+
+/*------------------공지 상세보기 출력------------------*/
+.contBox{
+	padding-top:10px;
+}
+.vbtnBox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.vbtnBox button{
+	padding:10px 15px 5px;
+	font-family: 'LINESeedKR-Bd';
+	border-radius: 10px;
+	color:var(--dgray);
+}
+.vbtnBox button:hover{
+	background-color: var(--main01);
+	color: var(--main03);
+}
+.bviewBox{
+	padding: 20px 10px;
+
+}
+
+.bviewBox .bvTitle{
+	font-family: 'LINESeedKR-Bd';
+	font-size: 1.3rem;
+}
+.bviewBox .bvDate{font-size: 0.5rem;}
+.bviewBox .bvEventPeriod{
+	padding:10px 0;
+	font-family: 'LINESeedKR-Bd';
+	font-size: 0.9rem;
+	color:var(--main03);
+}
+.bviewBox .bvCont{
+	font-size: 0.8rem;
+}
+
+.bviewBox .bvImg img{
+	width: 100%;
+	object-fit:cover;
+}
+

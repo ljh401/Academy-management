@@ -1,0 +1,357 @@
+@charset "UTF-8";
+.signupWarp .header{
+	padding:10px 15px;
+	background-color: #30E3CA;
+	color:#FFF;
+	text-align: center;
+}
+.signupbox ul {
+	padding:30px 0;
+	max-width: 400px;
+
+}
+
+.signupbox li:nth-of-type(odd) {
+	padding:20px 15px 5px;
+    font-family: 'LINESeedKR-Bd';
+	font-size: 0.9rem;
+	color:#666;
+}
+.signupbox li:nth-of-type(even) {
+	padding:0px 15px 10px;
+}
+.signupbox input{
+	width:100%;
+	border: none;
+    box-shadow: 0 0 5px #30E3CA;
+    border-radius: 3px;
+    padding:10px;
+}
+
+.input75{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.input75 button{border-radius: 5px;}
+.input75 input{
+	width:80%;
+}
+.input65 input{	width:70%;}
+.intext80{ width:80%;}
+.payinfo  input{
+	width:21%;
+	border: none;
+    box-shadow: 0 0 5px #30E3CA;
+    border-radius: 3px;
+}
+.btn {
+	width:100%;
+	margin: 30px 0 0;
+	font-size: 1.2rem;
+
+}
+.authBefore{
+	font-size :0.8rem;
+}
+
+.authAfter{
+    font-size :0.8rem;
+}
+BUTTON{
+    font-family: 'LINESeedKR-Bd';
+	background-color: #30E3CA;
+	color:#fff;
+	padding:10px;
+}
+/*-로그인-----------------------------------*/
+.signupbox span{
+	font-family: 'NanumSquareNeo-Variable';
+	display:inline-block;
+	padding-left:10px;
+	font-size: .7rem;
+	color:orange;
+}
+
+
+/*마이페이지-----------------------------------*/
+.myInfoBox{
+	font-family: 'LINESeedKR-Bd';
+	text-align:center;
+	padding:20px 10px;
+	background-color: var(--lgray);
+}
+.myInfoBox .col30{
+	display:flex;
+	justify-content:center;
+	margin: 0 auto;
+	position: relative;
+
+}
+.myInfoBox .col30 div{
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+
+}
+.myInfoBox img {
+	width:100px;
+    height:100px;
+	object-fit:cover;
+	border-radius: 50%;
+}
+.myInfoBox .minfo{
+	padding:10px;
+}
+
+.myMenuBox{
+	font-family: 'LINESeedKR-Bd';
+	padding:20px 0;
+}
+.myMenuBox .disFlexStCent{
+	margin-bottom: 10px;
+	padding:20px 10px;
+	background-color: var(--main01);
+	border-radius: 5px;
+	font-size:1.2rem;
+	color:var(--main02)
+}
+.myMenuBox i{padding:0 10px 0 20px;}
+/* 모달-------------------------------------*/
+
+.modalwrap {
+	position: absolute; /*화면고정*/
+	min-width:400px;
+	height: 100%;
+	top:0px;
+	background-color: rgba(0,0,0,0.4); /*검정색바탕에 투명도 50%*/
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.modalwrap2 { /* 카드번호 수정 레이어팝업 */
+	position: absolute; /*화면고정*/
+	min-width:400px;
+	height: 100%;
+	top:0px;
+	background-color: rgba(0,0,0,0.4); /*검정색바탕에 투명도 50%*/
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+.modal{
+	font-family: 'LINESeedKR-Bd';
+	background-color: #fff;
+	width:80%;
+/* 	height:300px; */
+	border-radius: 30px;
+	padding:30px 15px;
+}
+
+.modal .minputBox {
+	text-align:center;
+	padding:20px 0 ;
+}
+.modal .minputBox input {margin-left: 50px;}
+.mbtnBox{  text-align:center; }
+.modalwrap	{
+	padding:10px;
+	border-radius: 5px;
+	letter-spacing: 0.15rem;
+}
+
+.previewBox{ text-align: center;}
+.previewBox img{
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	object-fit:contain;
+
+}
+.modalwrap2 button { border-radius: 5px;}
+.modalpayinfo  input{
+	width:15%;
+	border: none;
+    box-shadow: 0 0 5px #30E3CA;
+    border-radius: 3px;
+}
+.modal2{
+	font-family: 'LINESeedKR-Bd';
+	color:var(--dgray);
+	background-color: #fff;
+	width:80%;
+	height:300px;
+	border-radius: 30px;
+	padding:30px 15px;
+}
+
+.fcolormain02 {
+	color:var(--main02);
+}
+.usedPayBox{
+	padding-bottom:20px;
+	border-bottom: solid 1px var(--main02);
+	text-align: center;
+}
+.usedTitle{	color:var(--main02);
+}
+.usedPayBox div{ padding:10px 0;}
+.newPayBox div{padding: 10px 0; text-align: center;}
+.newPayBox {padding-bottom: 10px;}
+
+/* 이용내역--------------------------------------*/
+.hcontBox {
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.hcontBox::-webkit-scrollbar {
+	display: none /* Chrome , Safari , Opera */
+}
+
+.pageInfo {
+	font-family: 'LINESeedKR-Bd';
+	font-size: 1.2rem;
+	letter-spacing: 0.2rem;
+	padding: 25px;
+	background-color: var(- -main01);
+	color: var(- -dgray);
+}
+
+.pageInfo i {
+	font-size: 1.5rem;
+	margin-right: 20px;
+}
+
+.histroyBox {
+	background-color: var(--lgray);
+	padding: 10px;
+
+}
+.mUsedList{
+	height:calc(100vh - 125x);
+}
+
+.hContBox {
+	font-family: 'NanumSquareNeo-Variable';
+	background-color: var(--white);
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	font-size: 0.8rem;
+	border-radius: 10px;
+}
+
+.hContBox li:not(:last-child ){
+	padding-bottom: 5px;
+}
+
+.hTitle {
+	letter-spacing: 0.67rem;
+	color: var(- -dgray);
+}
+
+.hTitleA {
+	margin-right: 8px;
+	color: var(- -dgray);
+}
+/* 공지사항/이벤트 리스트--------------------------------------*/
+.bpageinfo{
+	padding:10px 10px;
+	font-family: 'LINESeedKR-Bd';
+	font-size: 1.2rem;
+	color: var(--dgray);
+}
+.bpageinfo i{
+	position: absolute;
+	padding:3px;
+
+	display: flex;
+
+}
+.bpageinfo .gohome{
+	display: inline-block;
+    padding-left:30px;
+}
+.aptitle{
+	display:inline-block;
+	width:100%;
+	text-align: center;
+}
+
+.btypeBox{
+	padding: 0px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.btypeBox div{
+	padding: 10px;
+	width: 50%;
+	text-align: center;
+}
+.btypeBox .selected{
+	border-bottom: solid 3px var(--dgray);
+}
+
+.bContBox{
+	padding: 0px 10px;
+	overflow-y: auto;
+	height:calc(90vh - 40px);
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+.bContBox::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.btitle span{
+	font-size: 0.6rem;
+}
+.btitle {
+	padding: 10px 0 ;
+	line-height: 1.4rem;
+}
+/* 공지사항 이벤트 상세보기-------------------------------*/
+.contBox{
+    padding-top:10px;
+}
+.vbtnBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vbtnBox button{
+    padding:10px 15px 5px;
+    font-family: 'LINESeedKR-Bd';
+    border-radius: 10px;
+    color:var(--dgray);
+}
+.vbtnBox button:hover{
+    background-color: var(--main01);
+    color: var(--main03);
+}
+.bviewBox{
+    padding: 20px 10px;
+
+}
+
+.bviewBox .bvTitle{
+    font-family: 'LINESeedKR-Bd';
+    font-size: 1.3rem;
+}
+.bviewBox .bvDate{font-size: 0.5rem;}
+.bviewBox .bvEventPeriod{
+    padding:10px 0;
+    font-family: 'LINESeedKR-Bd';
+    font-size: 0.9rem;
+    color:var(--main03);
+}
+.bviewBox .bvCont{
+    font-size: 0.8rem;
+}
+
+.bviewBox .bvImg img{
+    width: 100%;
+    object-fit:cover;
+}

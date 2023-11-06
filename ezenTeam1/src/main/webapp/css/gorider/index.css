@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*-------------------(Header)----------------------*/
+/*.headerwrap{
+	display:flex;
+    justify-content:space-between;
+	padding:10px 5px 10px 15px;
+	background-color: #30E3CA;
+	color:#FFF;
+}
+
+.logo{
+	font-family: 'Giants-Inline';
+	font-size: 2rem;
+}
+*/
+.wrap{
+	overflow-y: auto;
+    height:calc(90vh - 190px);
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+.wrap::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+/*-------------------(목적지검색)----------------------*/
+.searchbox{
+	display: flex;
+	margin:30px 0;
+	padding:0 20px;
+	text-align: center;
+}
+
+.searchbox input, button {
+   border: none;
+   box-shadow: 0 0 5px #30E3CA;
+   border-radius: 5px;
+}
+.destination{
+	width:80%;
+	padding:8px;
+	   margin-right: 10px;
+
+}
+.destination:focus{
+    box-shadow: 2px 2px 5px #30E3CA;
+
+}
+.searchbtn{
+	padding:7px;
+	width:12%;
+	color:#11999E;
+}
+
+/*-------------------(메인이미지구역)----------------------*/
+
+.mainimg{
+	background-image: url('/ezenTeam1/img/gorider/main02.jpg');
+	background-repeat:no-repeat;
+	background-size:100%;
+    height:220px;
+	object-fit:cover;
+}
+
+
+/*-------------------(공지사항구역)----------------------*/
+.mboardBox{
+	padding:10px;
+
+}
+.bt1{
+	border-top: solid 1px var(--lgray);
+	border-bottom: solid 1px var(--lgray);
+}
+.mbtitle{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding-bottom: 3px;
+	border-bottom: solid 2px var(--lgray);
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: var(--dgray);
+}
+.mbtitle span {
+	display: inline-block;
+	font-size:0.7rem;
+	height:10px;
+	border:solid 1px var(--lgray);
+	border-radius: 5px;
+	padding:2px 5px 15px;
+}
+.mbtitle span:hover {
+    background-color: var(--main02);
+    color :var(--white);
+}
+.mbCont{
+	padding:3px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.mbContDate{
+	font-size: 0.6rem;
+    text-align: right;
+}
+.mbContTitle{
+	font-size: 0.8rem;
+    white-space: nowrap; /*텍스트가 너비값을 초과할때 다음줄로 개행하지 못하게*/
+    overflow: hidden;
+    text-overflow: ellipsis;  /* 말줄임 적용 */
+}

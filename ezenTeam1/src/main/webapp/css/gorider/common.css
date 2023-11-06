@@ -1,0 +1,405 @@
+@charset "UTF-8";
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	list-style-type: none;
+}
+
+/*
+    사용 : var(--white);
+*/
+:root{
+	--white: #ffffff;
+	--dgray: #666666;
+	--lgray: #e8e8e8;
+	--main01: #E4F9F5;
+	--main02: #30E3CA;
+	--main03: #11999E;
+	--main04: #40514E;
+	--lyellow :#ffd900;
+	--dyellow:#FBC22B;
+}
+a {  all: unset; text-decoration: none;}
+a:link { text-decoration: none;  }
+a:visited {text-decoration: none; }
+a:active { text-decoration: none;  }
+input:focus {outline:none;}
+h5{ padding:30px; text-align: center;}
+/*로고 폰트*/
+@font-face {
+    font-family: 'Giants-Inline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*기본폰트*/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/*스크롤박스 영역: 스크롤은 되고 스크롤은 보이지 않게----*/
+.scrollbox{
+    overflow-y: auto;
+    height:calc(90vh - 40px);
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+.scrollbox::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+/*--------------------------------------------*/
+.headerwrap button{
+	width:70px;
+	padding:15px 5px;
+    background-color: #E4F9F5;
+    color:#40514E;
+    font-weight: 900;
+}
+
+.headerwrap .hbtnbox{
+
+	display:flex;
+}
+.headerwrap .hbtnbox img {
+	width:40px;
+	height:40px;
+	object-fit:cover;
+	vertical-align: text-bottom;
+	border-radius: 50%;
+	cursor: pointer;
+	}
+.heardwrap .minfo{
+	display: flex;
+	align-items: center;
+}
+.minfo img{
+	margin-right: 5px;
+}
+
+.mname {
+	font-family: 'LINESeedKR-Bd';
+	font-size:0.9rem;
+	color:var(--white);
+	display: inline-block;
+	height:75%;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.sayhello{
+	font-family: 'LINESeedKR-Bd';
+	font-size:0.8rem;
+	display: inline-block;
+	height:75%;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.logout{
+	display: inline-block;
+	font-size:0.7rem;
+	text-align:right;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.logout:hover {color:#FFFA00;}
+
+/*--------------------------------------------*/
+
+body{
+	font-family: 'NanumSquareNeo-Variable';
+	overflow : hidden;
+}
+
+
+/*버튼--------------------------------------------*/
+BUTTON{ border: none;}
+.btnbox{display: flex;}
+.btn{
+    cursor: pointer;
+    background-color: var(--main02);
+    color:var(--white);
+    border-radius: 5px;
+    font-family: 'LINESeedKR-Bd';
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+.btnA{
+    cursor: pointer;
+    background-color: var(--main03);
+    color:var(--white);
+    border-radius: 5px;
+    font-family: 'LINESeedKR-Bd';
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+.r1{padding:15px 12px 0px;}
+.r2{padding:8px 12px 0px;}
+.btypeW50H50 {width:50%; height:50px;}
+.btypeW100H50{width:100%; height:70px; font-size:1.2rem;}
+
+/* .btn:hover{ color:var(--main03);} */
+.btn:hover{ color:#FFFA00;}
+
+.col10 {width: 10%;}
+.col15 {width: 15%;}
+.col18 {width: 18%;}
+.col20 {width: 20%;}
+.col25 {width: 25%;}
+.col30 {width: 30%;}
+.col35 {width: 35%;}
+.col40 {width: 40%;}
+.col45 {width: 45%;}
+.col50 {width: 50%;}
+.col55 {width: 55%;}
+.col60 {width: 60%;}
+.col70 {width: 70%;}
+.col80 {width: 80%;}
+.btnPd6{padding:6px 6px 3px; font-size: 0.7rem;}
+
+
+.colorY{color:#ffd700;}
+/*----------------------(전체 Wrap 설정)----------------------*/
+
+.wrap{
+    max-width:400px;
+    height:100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow-y: none;;
+    -ms-overflow-style:none;
+    scrollbar-width:0;
+}
+
+.wrapR{
+	background-color:#000;
+	max-width:400px;
+    height:100vh;
+    margin: 0 auto;
+    position: relative;
+}
+.headerwrap{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 5px 10px 15px;
+    background-color: #30E3CA;
+    color:#FFF;
+}
+.rheaderwrap{
+	display:flex;
+	justify-content:space-between;
+    font-family: 'LINESeedKR-Bd';
+	font-size:1.2rem;
+	color:var(--white);
+	padding:30px 20px;
+	border-bottom: solid 3px var(--main02);
+}
+.rheaderwrapA{
+	display:flex;
+	justify-content:flex-end;
+    font-family: 'LINESeedKR-Bd';
+	font-size:1.2rem;
+	color:var(--white);
+	padding:10px 20px;
+	border-bottom: solid 3px var(--main02);
+}
+
+.rheaderwrap p{
+	text-align: right;
+}
+
+.contentBox{
+	overflow-y:auto;
+	width:100%;
+	scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+.contentBox::-webkit-scrollbar {
+  width: 0px; /* 스크롤바의 너비 조정 */
+}
+.contentBoxA{
+    overflow-y:auto;
+    width:100%;
+    height:calc(100vh - 100px);
+     scrollbar-color: transparent transparent;
+}
+.contentBoxA::-webkit-scrollbar {
+  width: 1px; /* 스크롤바의 너비 조정 */
+}
+
+.disFlexCent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.disFlexCC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disFlexStCent{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.disFlexStart{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.disFlexEnd{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+.logo{
+    font-family: 'Giants-Inline';
+    font-size: 2rem;
+    cursor: pointer;
+}
+/*----------(admin_header)----------*/
+
+.wrapH{
+    max-width:400px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.headerwrapA{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    background-color: var(--main03);
+    color:#FFF;
+}
+
+.logoA{
+    font-family: 'Giants-Inline';
+    font-size: 1.2rem;
+}
+.hinfo{
+    vertical-align:middle;
+	font-family: 'LINESeedKR-Bd';
+	font-size:0.8rem;
+}
+
+/*----------(admin_header E)----------*/
+
+
+/*-------------------(footer)-------------------*/
+.footer{
+    position:absolute;
+    bottom:0;
+    height:10vh;
+    width:100%;
+    background-color: #40514E
+
+}
+.footerR{
+	display:flex;
+	justify-content:space-between;
+    position:absolute;
+    bottom:0;
+    height:100px;
+    width:100%;
+}
+
+/*-------------------(login)-------------------*/
+.loginWrap{
+	height:100vh;
+	background-color:var(--white);
+	padding-top:20vh;
+	font-family: 'LINESeedKR-Bd';
+}
+
+
+.loginWrap .logo{
+	width:100%;
+	text-align: center;
+	color:var(--main03);
+}
+.loginBox{
+	width:100%;
+	padding:30px;
+	margin: auto 0 ;
+}
+.loginBox input[type=text] {
+	border:none;
+	   outline:none;
+	padding:15px;
+	margin:10px 0;
+	width:100%;
+	border-radius:5px;
+	background-color: var(--white);
+	box-shadow: 0 0 3px var(--main02);
+}
+
+.loginBox button {margin-top: 20px;}
+.loption{padding-right:30px;}
+.findBox div{
+	margin-left: 10px;
+    color:var(--dgray);
+    font-size: 0.8rem;
+}
+.findBox div:hover{
+	cursor:pointer;
+	color:var(--main03)
+}
+
+.gbtnBox{
+	height:100%;
+	margin-top:50%;
+}
+.glogoBox{
+	  font-family: 'Giants-Inline';
+	  font-size: 3rem;
+	  color:var(--main02);
+	  text-align: center;
+	  padding-bottom: 50px;
+
+}
+.gmainBtn{
+	width:100%;
+	height: 100px;
+	margin-top:auto;
+	margin-bottom: 10px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-family: 'LINESeedKR-Bd';
+	letter-spacing:0.2rem;
+	color:#fff;
+	cursor: pointer;
+}
+.gmainBtn a:hover{
+	color:yellow;
+}
+
+.g1{
+	background-color: var(--main02);
+}
+
+.g2{
+	background-color: var(--main03);
+}
+.g3{
+	background-color: var(--main04);
+}
