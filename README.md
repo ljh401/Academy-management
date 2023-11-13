@@ -24,7 +24,3 @@
 
 # 6.EER 다이어그램
 <img width="655" alt="image" src="https://github.com/Parksangbean/goRider/assets/135796934/de5cf376-3488-4881-a77c-fb558a4098bb">
-
-# 7.Class 다이어그램
-<img width="455" alt="image" src="https://github.com/Parksangbean/goRider/assets/135796934/c45e1515-7e3e-4405-a5be-e8fc803c58bb">
-
